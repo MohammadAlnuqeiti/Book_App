@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './profile.css';
 import Navbar from "../../components/Navbar/Navbar";
 import axios from 'axios';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 
 export default function EditProfile() {
@@ -76,6 +76,7 @@ export default function EditProfile() {
       <br/>
       <input type="file" style={{border:'none',borderRadius:'0'}}  placeholder="image"   name="file" id="file"onChange={(e) => setFile(e.target.files[0])}/>
       <button type='submit'>Submit</button>
+      <Link to='/account' className='account'>cancel</Link>
     </form>
    </div>
         
