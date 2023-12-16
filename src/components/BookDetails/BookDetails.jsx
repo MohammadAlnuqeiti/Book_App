@@ -28,7 +28,7 @@ const BookDetails = () => {
 
 const getDataBook = () => {
 
-  axios.get(`http://localhost:80/REACT_REDUX/book_app_redux/back_end/getDataBooks.php/${id}`)
+  axios.get(`http://localhost:80/REACT_REDUX/Book_App/back_end/getDataBooks.php/${id}`)
   .then(response => {
       console.log(response.data)
       setBook(response.data);
@@ -36,7 +36,7 @@ const getDataBook = () => {
 }
 
 const deleteBook = (id) => {
-  axios.delete(`http://localhost:80/REACT_REDUX/book_app_redux/back_end/books.php/${id}/delete`).then((response)=>{
+  axios.delete(`http://localhost:80/REACT_REDUX/Book_App/back_end/books.php/${id}/delete`).then((response)=>{
       console.log(response.data);
       navigate('/book')
 

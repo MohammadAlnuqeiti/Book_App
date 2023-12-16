@@ -7,7 +7,7 @@ class crud{
     public static function connect(){
         try{
 
-        $con=new PDO('mysql:localhost=localhost;dbname=book_app_redux','root','');
+        $con=new PDO('mysql:localhost=localhost;port=3308;dbname=book_app_redux','root','');
 
        
         return $con;

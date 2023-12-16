@@ -47,7 +47,7 @@ const checkPass=RegExp(/^^[A-Za-z]\w{8,31}$/);
           console.log(this.users);
         }
         componentDidMount = () =>{
-          axios.get("http://localhost:80/REACT_REDUX/book_app_redux/back_end/user.php/users/")
+          axios.get("http://localhost:80/REACT_REDUX/Book_App /back_end/user.php/users/")
           .then((respone)=>{
             let email = respone.data.map((ele) => {
                   return ele.email
@@ -148,7 +148,7 @@ const checkPass=RegExp(/^^[A-Za-z]\w{8,31}$/);
             // let newUser ={name:this.state.name,email:this.state.email,password:this.state.password}
             // this.users.push(newUser);
             let inputs = {name:this.state.name,email:this.state.email,phone:this.state.phone,password:this.state.password}
-            axios.post("http://localhost:80/REACT_REDUX/book_app_redux/back_end/user.php/save",inputs)
+            axios.post("http://localhost:80/REACT_REDUX/Book_App /back_end/user.php/save",inputs)
             .then((respone)=>{
                 console.log(respone.data);
                 window.localStorage.setItem('email',this.state.email)

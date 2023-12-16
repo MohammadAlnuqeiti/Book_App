@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const login=(email,password)=> async dispatch => {
     try{
-        const res = await axios.get('http://localhost/REACT_REDUX/book_app_redux/back_end/login.php?email='+email+'&password='+password);
+        const res = await axios.get('http://localhost/REACT_REDUX/Book_App/back_end/login.php?email='+email+'&password='+password);
         dispatch( {
             type: GET_ADMIN,
             payload: res.data

@@ -20,7 +20,7 @@ export default function EditProfile() {
     } , [])
 
     function getUser(){
-        axios.get(`http://localhost:80/REACT_REDUX/book_app_redux/back_end/users.php/${id}`)
+        axios.get(`http://localhost:80/REACT_REDUX/Book_App /back_end/users.php/${id}`)
         .then(response => {
             console.log(response.data);
             setUser(response.data);
@@ -44,7 +44,7 @@ export default function EditProfile() {
       
         try {
           const response = await axios.post(
-            `http://localhost:80/REACT_REDUX/book_app_redux/back_end/editUserProfile.php/${id}`, formEditData
+            `http://localhost:80/REACT_REDUX/Book_App /back_end/editUserProfile.php/${id}`, formEditData
           );
           console.log(response.data);
           navigate(`/account`);

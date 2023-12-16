@@ -30,7 +30,7 @@ const Home = () => {
 
   // const getBooks =()=>{
     
-  //   axios.get("http://localhost/REACT_REDUX/book_app_redux/back_end/books.php")
+  //   axios.get("http://localhost/REACT_REDUX/Book_App/back_end/books.php")
   
   //   .then((res)=>{
   //       console.log(res.data)

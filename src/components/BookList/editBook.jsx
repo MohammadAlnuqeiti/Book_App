@@ -21,7 +21,7 @@ export default function EditBook() {
 
     const getBook = () => {
 
-        axios.get(`http://localhost:80/REACT_REDUX/book_app_redux/back_end/getDataBooks.php/${id}`)
+        axios.get(`http://localhost:80/REACT_REDUX/Book_App/back_end/getDataBooks.php/${id}`)
         .then((respone)=>{
             setBook(respone.data[0])
             console.log(respone.data[0]);
@@ -45,7 +45,7 @@ export default function EditBook() {
       
         try {
           const response = await axios.post(
-            `http://localhost:80/REACT_REDUX/book_app_redux/back_end/editBookProfile.php/${id}`, formEditData
+            `http://localhost:80/REACT_REDUX/Book_App/back_end/editBookProfile.php/${id}`, formEditData
           );
           console.log(response.data);
           navigate(`/book/${id}`)

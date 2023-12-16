@@ -41,7 +41,7 @@ export default function Profile() {
       // لعرض  بيانات المستخدم في الموقع
   const getDataUsers = () => {
 
-    axios.get(`http://localhost:80/REACT_REDUX/book_app_redux/back_end/user.php/users/${current_ID}`)
+    axios.get(`http://localhost:80/REACT_REDUX/Book_App /back_end/user.php/users/${current_ID}`)
     .then((respone)=>{
       setDataUsers(respone.data)
         console.log(respone.data);
@@ -50,7 +50,7 @@ export default function Profile() {
 
 const getDataBook = () => {
 
-  axios.get(`http://localhost:80/REACT_REDUX/book_app_redux/back_end/getBooksByUserId.php/${current_ID}`)
+  axios.get(`http://localhost:80/REACT_REDUX/Book_App /back_end/getBooksByUserId.php/${current_ID}`)
   .then(response => {
       console.log(response.data)
       setBooks(response.data);

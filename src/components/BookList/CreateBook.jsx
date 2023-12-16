@@ -30,7 +30,7 @@ const handleSubmit = async (e) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:80/REACT_REDUX/book_app_redux/back_end/books.php",
+        "http://localhost:80/REACT_REDUX/Book_App/back_end/books.php",
         formData
       );
       console.log(response.data);
